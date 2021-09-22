@@ -53,7 +53,7 @@ public class UserDAO {
 		
 		try {
 			pstmt = conn.prepareStatement(SQL);
-			pstmt.setString(1, user.getUserGender());
+			pstmt.setString(1, user.getUserName());
 			pstmt.setInt(2, user.getUserAge());
 			pstmt.setString(3, user.getUserGender());
 			pstmt.setString(4, user.getUserEmail());
