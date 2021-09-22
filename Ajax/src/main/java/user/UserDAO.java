@@ -15,7 +15,7 @@ public class UserDAO {
 	public UserDAO() {
 		try {
 			String dbURL = "jdbc:mysql://localhost:3306/AJAX";
-			String dbID = "roor";
+			String dbID = "root";
 			String dbPassword = "7777";
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
@@ -30,7 +30,7 @@ public class UserDAO {
 		
 		try {
 			pstmt = conn.prepareStatement(SQL);
-			pstmt.setString(1, userName);
+			pstmt.setString(1, "%" + userName + "%");
 			rs = pstmt.executeQuery();
 			
 			while(rs.next()) {
