@@ -12,3 +12,6 @@ Asynchronous JavaScript and XML의 약자로 빠르게 동작하는 동적인 �
   
 3. 데이터베이스
 - USER(userName, userAge, userGender, userEmail)
+
+4. JSON
+- JavaScript Object Notation은 속성-값 쌍 또는 키-값 쌍으로 이루어진 데이터 오브젝트를 전달하기 위해 인간이 읽을 수 있는 텍스트를 사용하는 개방형 표준 포맷이다.
